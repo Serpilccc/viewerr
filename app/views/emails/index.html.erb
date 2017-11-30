@@ -1,0 +1,42 @@
+<div id="vidtop-content">
+<div class="vid-info">
+
+<p id="notice"><%= notice %></p>
+
+<h1>Emails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<p> edkzdhzkd</p>
+
+  <tbody>
+    <% @emails.each do |email| %>
+      <tr>
+        <td><%= email.object %></td>
+        <td><%= email.body %></td>
+        <td><%= link_to 'Show', email %></td>
+        <td><%= link_to 'Edit', edit_email_path(email) %></td>
+        <td><%= link_to 'Destroy', email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Email', new_email_path %>
+
+<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/oVv7-Js-Ew8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=oVv7-Js-Ew8" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
